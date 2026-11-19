@@ -1,0 +1,8 @@
+schemaVersion: 1
+steps:
+  - id: hello_returns_hi
+    run:
+      - python3
+      - -c
+      - from hello import hello; assert hello() == 'hi'
+    expectExit: 0
